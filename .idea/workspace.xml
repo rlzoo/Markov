@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ea84aea-661c-44e8-86af-e3f2be8c17ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/gridworld_policy_iteration.py" beforeDir="false" afterPath="$PROJECT_DIR$/examples/gridworld_policy_iteration.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,11 +15,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.2996231">
       <split-first>
         <leaf>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/markov/envs/gridworld.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="135">
+                  <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
                 </state>
               </provider>
             </entry>
@@ -50,7 +51,7 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/markov/mdp.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="345">
@@ -75,8 +76,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/examples/gridworld_policy_iteration.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+                <state relative-caret-position="90">
+                  <caret line="6" selection-start-line="6" selection-end-line="56" />
                 </state>
               </provider>
             </entry>
@@ -85,8 +86,8 @@
             <entry file="file://$PROJECT_DIR$/README.md">
               <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
                 <state split_layout="SPLIT">
-                  <first_editor relative-caret-position="225">
-                    <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+                  <first_editor relative-caret-position="360">
+                    <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
                   </first_editor>
                   <second_editor />
                 </state>
@@ -114,9 +115,9 @@
         <option value="$PROJECT_DIR$/markov/optimizers.py" />
         <option value="$PROJECT_DIR$/markov/__init__.py" />
         <option value="$PROJECT_DIR$/markov/policy.py" />
-        <option value="$PROJECT_DIR$/examples/gridworld_policy_iteration.py" />
         <option value="$PROJECT_DIR$/markov/mdp.py" />
         <option value="$PROJECT_DIR$/markov/envs/gridworld.py" />
+        <option value="$PROJECT_DIR$/examples/gridworld_policy_iteration.py" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -268,20 +269,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/examples/gridworld_policy_iteration.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/markov/envs/gridworld.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/markov/mdp.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -289,11 +276,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/markov/envs/gridworld.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/gridworld_policy_iteration.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" selection-start-line="6" selection-end-line="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="225">
-            <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <first_editor relative-caret-position="360">
+            <caret line="72" lean-forward="true" selection-start-line="72" selection-end-line="72" />
           </first_editor>
           <second_editor />
         </state>

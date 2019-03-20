@@ -11,7 +11,7 @@ from markov import GreedyPolicy
 from markov.envs.gridworld import GridWorld
 
 
-def sync_value_iteration(K=1,discount_factor=1.):
+def value_iteration(K=1,discount_factor=1.):
     """
 
     :param K:
@@ -49,8 +49,7 @@ def main():
     args = parser.parse_args()
     k = args.k
 
-    sync_value_iteration(k)
-
+    value_iteration(k)
 
 
 if __name__ == "__main__":
