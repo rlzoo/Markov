@@ -133,8 +133,12 @@ class GridWorld(MDPEnv):
 
         if grayscale:
             frame = np.uint8(frame)
-            cv2.imshow("frame", frame)
-            cv2.waitKey(0)
+
+            plt.imshow(frame)
+            plt.show()
+
+            # cv2.imshow("frame", frame)
+            # cv2.waitKey(0)
 
         else:
 
@@ -147,7 +151,7 @@ class GridWorld(MDPEnv):
 
             color_frame = cv2.resize(color_frame, display_size)
 
-            plt.imshow(image)
+            plt.imshow(color_frame)
             plt.show()
 
             # cv2.imshow('frame', color_frame)
