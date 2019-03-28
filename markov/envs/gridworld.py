@@ -4,6 +4,7 @@
 GridWorld Environment
 """
 from __future__ import division, print_function
+from matplotlib import pyplot as plt
 
 import cv2
 import numpy as np
@@ -145,5 +146,9 @@ class GridWorld(MDPEnv):
             color_frame = np.uint8(color_frame)
 
             color_frame = cv2.resize(color_frame, display_size)
-            cv2.imshow('frame', color_frame)
-            cv2.waitKey(0)
+
+            plt.imshow(image)
+            plt.show()
+
+            # cv2.imshow('frame', color_frame)
+            # cv2.waitKey(0)
