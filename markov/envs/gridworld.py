@@ -5,6 +5,9 @@ GridWorld Environment
 """
 from __future__ import division, print_function
 
+import cv2
+import numpy as np
+
 from markov import MDPEnv, MDPState
 
 
@@ -109,3 +112,38 @@ class GridWorld(MDPEnv):
                     self.grid[h][w].value), 2)).ljust(6))
             print(row + '|')
         print('+---------' * self.shape[1] + '+')
+
+    def cv2_visualize(self, display_size=(500, 500), grayscale=False):
+        """
+
+        :param display_size:
+        :param grayscale:
+        :return:
+        """
+        frame = np.zeros(self.shape)
+
+        for h in range(self.shape[0]):
+            for w in range(self.shape[1]):
+                frame[h][w] = int(abs(self.grid[h][w].value))
+
+        max_frame = np.max(frame)
+
+        frame = frame * (255 / max_frame)
+
+        if grayscale:
+            frame = np.uint8(frame)
+            cv2.imshow("frame", frame)
+            cv2.waitKey(0)
+
+        else:
+
+            color_frame = np.zeros((self.shape[0], self.shape[1], 3))
+            for h in range(self.shape[0]):
+                for w in range(self.shape[1]):
+                    color_frame[h][w] = (0, 255 - frame[h][w], frame[h][w])
+
+            color_frame = np.uint8(color_frame)
+
+            color_frame = cv2.resize(color_frame, display_size)
+            cv2.imshow('frame', color_frame)
+            cv2.waitKey(0)

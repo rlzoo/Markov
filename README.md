@@ -56,7 +56,6 @@ def value_iteration(K=1,discount_factor=1.):
     for k in range(K):
         for state in env.states:
             v = 0
-
             for i, action in enumerate(state.actions):
                 policy = state.policy[i]
                 next_state = action(env, state.action_args)
