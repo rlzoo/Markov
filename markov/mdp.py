@@ -58,6 +58,7 @@ class MDPEnv(object):
         self.actions = []
         self.n_states = len(self.states)
         self.n_actions = len(self.actions)
+
         # State Transition Probability Matrix
-        self.stpm = np.zeros((self.n_states, self.n_states))
+        # self.stpm = np.zeros((self.n_states, self.n_states))
 

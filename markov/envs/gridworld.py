@@ -4,10 +4,10 @@
 GridWorld Environment
 """
 from __future__ import division, print_function
-from matplotlib import pyplot as plt
 
 import cv2
 import numpy as np
+from matplotlib import pyplot as plt
 
 from markov import MDPEnv, MDPState
 
@@ -114,7 +114,8 @@ class GridWorld(MDPEnv):
             print(row + '|')
         print('+---------' * self.shape[1] + '+')
 
-    def cv2_visualize(self, display_size=(500, 500), grayscale=False):
+    def cv2_visualize(self, display_size=(500, 500), grayscale=False,
+                      use_plt=True):
         """
 
         :param display_size:
@@ -134,11 +135,13 @@ class GridWorld(MDPEnv):
         if grayscale:
             frame = np.uint8(frame)
 
-            plt.imshow(frame)
-            plt.show()
+            if use_plt:
+                plt.imshow(frame)
+                plt.show()
 
-            # cv2.imshow("frame", frame)
-            # cv2.waitKey(0)
+            else:
+                cv2.imshow("frame", frame)
+                cv2.waitKey(0)
 
         else:
 
@@ -151,8 +154,10 @@ class GridWorld(MDPEnv):
 
             color_frame = cv2.resize(color_frame, display_size)
 
-            plt.imshow(color_frame)
-            plt.show()
+            if use_plt:
+                plt.imshow(color_frame)
+                plt.show()
 
-            # cv2.imshow('frame', color_frame)
-            # cv2.waitKey(0)
+            else:
+                cv2.imshow('frame', color_frame)
+                cv2.waitKey(0)
