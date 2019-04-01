@@ -11,8 +11,8 @@ import numpy as np
 import ray
 import tqdm
 
-from markov import GreedyPolicy
-from markov.envs.gridworld import GridWorld
+from markov_rlzoo import GreedyPolicy
+from markov_rlzoo.envs.gridworld import GridWorld
 
 
 def sync_value_iteration(K=1, vis_type=0, discount_factor=1.):

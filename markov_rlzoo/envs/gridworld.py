@@ -9,7 +9,7 @@ import cv2
 import numpy as np
 from matplotlib import pyplot as plt
 
-from markov import MDPEnv, MDPState
+from markov_rlzoo import MDPEnv, MDPState
 
 
 class GridWorld(MDPEnv):
