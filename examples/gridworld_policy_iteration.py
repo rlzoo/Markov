@@ -72,7 +72,7 @@ def worker_task(state_id, ps, discount_factor=1.0):
 
     # Create the environment within the remote function
     # instead of having to serialize the entire environment
-    env = GridWorld(shape=(4, 4), ends=[(0, 0), (3, 3)])
+    env = GridWorld(shape=(100, 100), ends=[(0, 0), (3, 3)])
     GreedyPolicy(env)
 
     values = ray.get(ps.pull.remote())

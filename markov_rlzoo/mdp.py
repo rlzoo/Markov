@@ -38,10 +38,12 @@ class MDPState(object):
         for a in self.actions:
             next_state = a(self.env, self.action_args)
 
-            if not self in next_state.prev_states:
-                next_state.prev_states.append(self)
+            if not next_state.global_id == self.global_id:
 
-            self.next_states.append(next_state)
+                if not self in next_state.prev_states:
+                    next_state.prev_states.append(self)
+
+                self.next_states.append(next_state)
 
 
 class MDPEnv(object):
